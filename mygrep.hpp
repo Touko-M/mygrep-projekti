@@ -5,8 +5,11 @@
  using namespace std;
 
  //etsii kohteen annetusta tekstistä
- //parametrit: text ja pattern
+ //parametrit: text(etsittävä teksti) ja pattern(hakusana)
  //palautus: ensimmäinen indeksi tai -1 jos ei löydy
- int findSubstring(const string& text, const string& pattern);
+ int findSubstring(const char* text, const char* pattern);
+ //etsii kohteen tiedostosta rivi kerrallaan ja tulostaa löytyneet
+ //parametrit: filename(tiedoston nimi) ja pattern(hakusana)
+ void searchInFile(const char* filename, const char* pattern);
 
  #endif //MYGREP_HPP
